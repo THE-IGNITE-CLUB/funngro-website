@@ -1,0 +1,584 @@
+<!DOCTYPE html><html class="dark" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&amp;family=Outfit:wght@300..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { 'colors': { 'on-secondary-container': '#00686f', 'glow-cyan': 'rgba(0, 240, 255, 0.35)', 'error-container': '#93000a', 'border-subtle': 'rgba(255, 255, 255, 0.08)', 'surface': '#101412', 'surface-tint': '#00e475', 'tertiary-container': '#50e0a5', 'accent-cyan': '#00F0FF', 'inverse-on-surface': '#2d312f', 'on-primary': '#003918', 'glow-primary': 'rgba(0, 230, 118, 0.35)', 'primary-container': '#00e676', 'inverse-surface': '#e0e3df', 'surface-dim': '#101412', 'surface-card': '#0D1310', 'on-tertiary': '#003824', 'on-secondary-fixed-variant': '#004f54', 'error': '#ffb4ab', 'primary-fixed-dim': '#00e475', 'background': '#101412', 'surface-abyss': '#080C0A', 'on-primary-fixed-variant': '#005226', 'tertiary-fixed-dim': '#4edea3', 'inverse-primary': '#006d35', 'surface-container-high': '#272b28', 'tertiary': '#71fdbf', 'on-surface-variant': '#bacbb9', 'surface-bright': '#363a38', 'secondary': '#d3fbff', 'primary': '#75ff9e', 'on-tertiary-fixed': '#002113', 'on-primary-container': '#00612e', 'accent-gold': '#FFD043', 'secondary-container': '#00eefc', 'on-primary-fixed': '#00210b', 'tertiary-fixed': '#6ffbbe', 'surface-container-highest': '#313633', 'secondary-fixed': '#7df4ff', 'on-secondary': '#00363a', 'outline': '#859585', 'secondary-fixed-dim': '#00dbe9', 'on-tertiary-fixed-variant': '#005236', 'primary-fixed': '#62ff96', 'surface-raised': '#141C17', 'surface-container-low': '#181c1a', 'border-glass': 'rgba(0, 230, 118, 0.18)', 'on-error-container': '#ffdad6', 'on-background': '#e0e3df', 'outline-variant': '#3b4a3d', 'on-tertiary-container': '#006041', 'surface-container-lowest': '#0b0f0d', 'on-secondary-fixed': '#002022', 'on-error': '#690005', 'surface-glass': 'rgba(13, 19, 16, 0.72)', 'on-surface': '#e0e3df', 'surface-variant': '#313633', 'surface-container': '#1c211e' }, 'borderRadius': { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, 'spacing': { 'space-2xl': '3rem', 'space-xs': '0.5rem', 'space-4xl': '6rem', 'space-3xs': '0.125rem', 'gutter-desktop': '1.5rem', 'space-2xs': '0.25rem', 'space-xl': '2rem', 'margin-desktop': '2.5rem', 'space-3xl': '4rem', 'space-sm': '0.75rem', 'space-lg': '1.5rem', 'gutter-mobile': '1rem', 'space-md': '1rem', 'margin-mobile': '1.25rem' }, 'fontFamily': { 'title-md': ['Outfit'], 'headline-lg': ['Outfit'], 'display-hero-mobile': ['Outfit'], 'headline-md': ['Outfit'], 'label-caps': ['Hanken Grotesk'], 'display-hero': ['Outfit'], 'body-md': ['Hanken Grotesk'], 'body-sm': ['Hanken Grotesk'], 'headline-sm': ['Outfit'], 'body-lg': ['Hanken Grotesk'], 'headline-lg-mobile': ['Outfit'], 'label-numeric': ['Outfit'] }, 'fontSize': { 'title-md': ['16px', { 'lineHeight': '24px', 'letterSpacing': '0em', 'fontWeight': '600' }], 'headline-lg': ['40px', { 'lineHeight': '48px', 'letterSpacing': '-0.025em', 'fontWeight': '700' }], 'display-hero-mobile': ['36px', { 'lineHeight': '44px', 'letterSpacing': '-0.02em', 'fontWeight': '800' }], 'headline-md': ['24px', { 'lineHeight': '32px', 'letterSpacing': '-0.015em', 'fontWeight': '600' }], 'label-caps': ['11px', { 'lineHeight': '14px', 'letterSpacing': '0.12em', 'fontWeight': '700' }], 'display-hero': ['56px', { 'lineHeight': '64px', 'letterSpacing': '-0.03em', 'fontWeight': '800' }], 'body-md': ['15px', { 'lineHeight': '22px', 'letterSpacing': '0em', 'fontWeight': '400' }], 'body-sm': ['13px', { 'lineHeight': '18px', 'letterSpacing': '0.01em', 'fontWeight': '400' }], 'headline-sm': ['20px', { 'lineHeight': '28px', 'letterSpacing': '-0.01em', 'fontWeight': '600' }], 'body-lg': ['18px', { 'lineHeight': '28px', 'letterSpacing': '-0.01em', 'fontWeight': '400' }], 'headline-lg-mobile': ['28px', { 'lineHeight': '36px', 'letterSpacing': '-0.02em', 'fontWeight': '700' }], 'label-numeric': ['18px', { 'lineHeight': '24px', 'letterSpacing': '0.02em', 'fontWeight': '700' }] } } } };</script></head><body class="bg-surface-abyss font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface-glass backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-20 max-w-7xl mx-auto px-gutter-desktop flex items-center justify-between"><div class="flex items-center gap-space-xl"><a class="flex items-center gap-space-xs group" data-path="discover-gigs" href="#"><div class="w-9 h-9 rounded-lg bg-surface-raised flex items-center justify-center shadow-[0_0_16px_rgba(0,230,118,0.25)] group-hover:shadow-[0_0_24px_rgba(0,230,118,0.45)] transition-all"><span class="material-symbols-outlined text-primary text-headline-sm">bolt</span></div><div class="flex flex-col"><span class="font-headline-md text-headline-md font-bold tracking-tight text-on-surface leading-none">funngro</span><span class="font-label-caps text-label-caps text-primary tracking-widest leading-none mt-space-3xs">TEEN FREELANCING</span></div></a><nav class="hidden lg:flex items-center gap-space-xs bg-surface-abyss/60 p-space-3xs rounded-full shadow-[inset_0_1px_0_rgba(255,255,255,0.06)]" data-active-classes="bg-surface-raised text-primary font-title-md text-title-md"><a aria-current="page" class="px-space-md py-space-xs rounded-full transition-all bg-surface-raised text-primary font-title-md text-title-md" data-path="discover-gigs" href="#">Discover Gigs</a><a class="px-space-md py-space-xs rounded-full font-title-md text-title-md text-on-surface-variant hover:text-on-surface transition-all" data-path="how-it-works" href="#">How It Works</a><a class="px-space-md py-space-xs rounded-full font-title-md text-title-md text-on-surface-variant hover:text-on-surface transition-all" data-path="hall-of-fame" href="#">Hall of Fame</a><a class="px-space-md py-space-xs rounded-full font-title-md text-title-md text-on-surface-variant hover:text-on-surface transition-all" data-path="for-companies" href="#">For Companies</a></nav></div><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-space-2xs bg-surface-raised rounded-full shadow-[0_0_12px_rgba(0,230,118,0.15)]"><span class="material-symbols-outlined text-primary text-body-sm">electric_bolt</span><span class="font-label-caps text-label-caps text-on-surface-variant uppercase">GroScore</span><span class="font-label-numeric text-label-numeric text-primary">780 XP</span></div><button class="relative p-space-xs rounded-full bg-surface-raised text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-headline-sm">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-primary-container shadow-[0_0_8px_#00e676] animate-pulse"></span></button><div class="flex items-center gap-space-xs pl-space-xs bg-surface-raised rounded-full p-space-3xs"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1Veko_L5Gmlfw2bhrj2MoU1Z04T-FYkj3HRAfhz2ti2tD4ucZonU_xX63h-nFoYcP6vH3qQ6WU0kvb7-BGl_WHpPChhnBDk-v1gl04rdDBe9VfTD1K1h1724RDgC9bdjs-vvL3IBkCA-3MUA-27uAIGGBTaKDS4bQAsWH-oK3UfATKqHuUcrLAHtYjeCFsvs9sLmU-Q8LMs79tP9haf3uKS4xv3Ug7OePapewPzat4PC6lyUeArjHmB"><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-primary shadow-[0_0_6px_#75ff9e]"></span></div><div class="hidden xl:flex flex-col pr-space-sm"><span class="font-title-md text-title-md text-on-surface leading-tight">Sarthak S.</span><span class="font-label-caps text-label-caps text-on-surface-variant">Teen Prodigy</span></div></div><a class="hidden md:inline-flex items-center justify-center px-space-md py-space-xs rounded-lg bg-primary-container text-on-primary font-title-md text-title-md shadow-[0_0_20px_rgba(0,230,118,0.35)] hover:shadow-[0_0_28px_rgba(0,230,118,0.55)] transition-all" data-path="for-companies" href="#">Switch to Employer</a></div></div></header><main class="w-full pt-20 bg-surface-abyss"><div class="flex flex-col w-full">
+<!-- Dynamic Glow Backdrop -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-40 left-1/4 w-[700px] h-[500px] bg-primary-container/10 rounded-full blur-[140px] pointer-events-none"></div>
+<div class="absolute top-80 -right-20 w-[550px] h-[550px] bg-accent-cyan/10 rounded-full blur-[150px] pointer-events-none"></div>
+<!-- 1. EXPANSIVE HERO SECTION (2-Column Desktop Grid) -->
+<section class="max-w-7xl mx-auto px-gutter-desktop pt-space-xl pb-space-3xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center">
+<!-- Left Column: Typography & Action Engine -->
+<div class="lg:col-span-7 flex flex-col items-start gap-space-lg">
+<!-- Pill Tag -->
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-2xs rounded-full bg-surface-raised shadow-[0_0_18px_rgba(0,230,118,0.2)]">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary-container"></span>
+</span>
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">INDIA'S #1 TEEN FREELANCING PLATFORM</span>
+</div>
+<!-- Massive Cinematic Headline -->
+<div class="flex flex-col gap-space-3xs">
+<h1 class="font-display-hero text-display-hero text-on-surface tracking-tight leading-[1.08] max-w-2xl">
+              Level Up Your Skills. <br>
+<span class="bg-gradient-to-r from-primary via-primary-container to-accent-cyan bg-clip-text text-transparent drop-shadow-[0_0_35px_rgba(0,230,118,0.35)]">
+                Earn Real Money
+              </span>
+              Before 18.
+            </h1>
+</div>
+<!-- Punchy Gen-Z Subtext -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
+            Work with 5,000+ top brands, build proof-of-work portfolios, and get instant payouts directly to your UPI with 0% platform cuts.
+          </p>
+<!-- Dual High-Impact Action CTAs -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs w-full sm:w-auto">
+<a class="inline-flex items-center justify-center gap-space-xs px-space-xl py-space-md rounded-full bg-primary-container text-on-primary font-headline-sm text-headline-sm shadow-[0_0_32px_rgba(0,230,118,0.45)] hover:shadow-[0_0_48px_rgba(0,230,118,0.7)] transition-all transform hover:-translate-y-0.5" href="#">
+<span class="">Start Earning Now</span>
+<span class="material-symbols-outlined text-headline-sm">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center gap-space-xs px-space-lg py-space-md rounded-full bg-surface-glass backdrop-blur-md text-primary font-title-md text-title-md hover:bg-surface-raised transition-all" href="#">
+<span class="material-symbols-outlined text-accent-cyan">grid_view</span>
+<span class="">Explore 1,200+ Live Gigs</span>
+</a>
+</div>
+<!-- High-Trust Escrow Stats Strip -->
+<div class="w-full grid grid-cols-2 sm:grid-cols-4 gap-space-md pt-space-md">
+<div class="flex flex-col bg-surface-raised/80 rounded-xl p-space-sm backdrop-blur-sm">
+<span class="font-label-numeric text-label-numeric text-on-surface">5,000+</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Verified Brands</span>
+</div>
+<div class="flex flex-col bg-surface-raised/80 rounded-xl p-space-sm backdrop-blur-sm">
+<span class="font-label-numeric text-label-numeric text-primary">₹4.8 Cr+</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Paid to Teens</span>
+</div>
+<div class="flex flex-col bg-surface-raised/80 rounded-xl p-space-sm backdrop-blur-sm">
+<span class="font-label-numeric text-label-numeric text-accent-cyan">0% Cut</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Direct UPI Vault</span>
+</div>
+<div class="flex flex-col bg-surface-raised/80 rounded-xl p-space-sm backdrop-blur-sm">
+<span class="font-label-numeric text-label-numeric text-accent-gold">18 Mins</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Avg First Task</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Media Embed & Guarantee Terminal -->
+<div class="lg:col-span-5 flex flex-col gap-space-md relative">
+<!-- Ambient Glow for card -->
+<div class="absolute -inset-1 bg-gradient-to-r from-primary-container/20 to-accent-cyan/20 rounded-2xl blur-xl opacity-60"></div>
+<!-- Cinematic Shark Tank Card -->
+<div class="relative bg-surface-card rounded-2xl overflow-hidden shadow-2xl">
+<div class="relative aspect-video w-full bg-surface-container overflow-hidden group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Cinematic high contrast broadcast still of teenage girl entrepreneur and venture capitalist pitched on Shark Tank India stage, intense neon lighting with bold cyan and lime green studio key lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoT5THqrqwq-qEqoMlsk6wYNffMOS4o64sB7shiIikYenpmvn2rb5Lbky2vh17VbTLUCjGRSkNn3ec7y1wkiXvAPOFMpCN0K9fT4gpxktUMYBeJbk8GHchIL9YGwwvUFDd1NB2JPhBEN7lb-H6z17MQ6ad7aRBd-zFtoPJnABeQjooXfCDRRkiWDJZv3SIx1krb3X-i-w2jjjlD_G9ut-B7akn0QzBFESXbm7WgkK9qfR3iS5gQQ">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-abyss via-surface-abyss/40 to-transparent"></div>
+<!-- Badge Overlay -->
+<div class="absolute top- space-sm left-space-sm flex items-center gap-space-2xs px-space-sm py-space-2xs rounded-full bg-surface-abyss/85 backdrop-blur-md">
+<span class="material-symbols-outlined text-primary text-body-sm">tv</span>
+<span class="font-label-caps text-label-caps text-primary tracking-wider uppercase">AS SEEN ON SHARK TANK INDIA S2</span>
+</div>
+<!-- Play / Telemetry overlay button -->
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-14 h-14 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-[0_0_28px_rgba(0,230,118,0.7)] group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-headline-md" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<!-- Bottom caption within image -->
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface bg-surface-card/80 px-space-xs py-space-3xs rounded backdrop-blur">SEASON 2 • EPISODE 34</span>
+<span class="font-label-caps text-label-caps text-accent-cyan bg-surface-card/80 px-space-xs py-space-3xs rounded backdrop-blur">ALL 5 SHARKS OFFER</span>
+</div>
+</div>
+<!-- Card Bottom Meta -->
+<div class="p-space-lg flex flex-col gap-space-2xs bg-surface-card">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">Backed by India's Top Angel Investors</span>
+<span class="material-symbols-outlined text-accent-gold text-headline-sm">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Recognized nationwide for pioneering financial independence and skills for Gen-Z builders and teenage creators.
+              </p>
+</div>
+</div>
+<!-- Instant UPI Guarantee Terminal Banner -->
+<div class="relative bg-surface-raised rounded-xl p-space-md flex items-center gap-space-md shadow-[0_0_24px_rgba(0,230,118,0.12)]">
+<div class="w-12 h-12 rounded-xl bg-surface-abyss flex items-center justify-center text-primary shadow-[0_0_16px_rgba(0,230,118,0.25)] flex-shrink-0">
+<span class="material-symbols-outlined text-headline-md">shield</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-2xs">
+<span class="font-title-md text-title-md text-on-surface">Direct UPI Payout Guarantee</span>
+<span class="px-space-2xs py-space-3xs rounded bg-primary-container/20 text-primary font-label-caps text-label-caps">100% SECURE</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Instant, zero broker fees, RBI-compliant bank escrow released upon client approval.</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- 2. THREE EARNING TIERS (3-Column Desktop Grid) -->
+<section class="max-w-7xl mx-auto px-gutter-desktop py-space-3xl w-full">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-2xl">
+<div class="flex flex-col gap-space-3xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-headline-sm">layers</span>
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">STRUCTURED PROGRESSION</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+          Choose Your Freelance Arena
+        </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+        From 15-minute quick bounties to full monthly corporate retainers. Scale your income as your GroScore unlocks elite tiers.
+      </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg items-stretch">
+<!-- Tier 1: Toffee Projects -->
+<div class="flex flex-col justify-between bg-surface-card rounded-2xl p-space-xl shadow-lg hover:shadow-[0_0_24px_rgba(0,230,118,0.15)] transition-all transform hover:-translate-y-1">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-space-2xs rounded-full bg-surface-raised font-label-caps text-label-caps text-on-surface-variant">
+              STARTER TIER • LEVEL 1 • ACTIVE
+            </span>
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+</div>
+<div class="w-14 h-14 rounded-xl bg-surface-raised flex items-center justify-center text-primary mt-space-xs">
+<span class="material-symbols-outlined text-headline-lg">bolt</span>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<h3 class="font-headline-md text-headline-md text-on-surface">Toffee Projects</h3>
+<p class="font-body-md text-body-md text-on-surface-variant min-h-[66px]">
+              Quick micro-tasks: survey feedback, app store testing, UX reviews, viral shorts sharing. Get paid in 15 minutes.
+            </p>
+</div>
+<div class="p-space-md rounded-xl bg-surface-raised/60 flex flex-col gap-space-3xs">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Potential Payout</span>
+<span class="font-label-numeric text-headline-sm text-primary">₹50 – ₹200 <span class="text-body-sm font-normal text-on-surface-variant">/ task</span></span>
+</div>
+</div>
+<div class="pt-space-xl">
+<a class="w-full py-space-sm px-space-md rounded-lg bg-surface-raised hover:bg-surface-bright text-on-surface font-title-md text-title-md flex items-center justify-center gap-space-xs transition-colors" href="#">
+<span class="">Quick Start (15 min)</span>
+<span class="material-symbols-outlined text-body-md">arrow_outward</span>
+</a>
+</div>
+</div>
+<!-- Tier 2: Company Projects (Featured Heroic Card) -->
+<div class="relative flex flex-col justify-between bg-surface-raised rounded-2xl p-space-xl shadow-[0_0_36px_rgba(0,230,118,0.22)] transform hover:-translate-y-1 transition-all">
+<!-- Top Laser Glow Accent -->
+<div class="absolute -top-px left-8 right-8 h-1 bg-gradient-to-r from-transparent via-primary to-transparent"></div>
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-space-2xs rounded-full bg-primary-container text-on-primary font-label-caps text-label-caps shadow-[0_0_12px_rgba(0,230,118,0.4)]">
+              GROWTH TIER • GROSCORE 60+
+            </span>
+<span class="material-symbols-outlined text-accent-gold text-title-md">star</span>
+</div>
+<div class="w-14 h-14 rounded-xl bg-primary-container/15 flex items-center justify-center text-primary mt-space-xs shadow-[0_0_16px_rgba(0,230,118,0.3)]">
+<span class="material-symbols-outlined text-headline-lg">work</span>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<h3 class="font-headline-md text-headline-md text-on-surface">Company Projects</h3>
+<p class="font-body-md text-body-md text-on-surface-variant min-h-[66px]">
+              Direct creative briefs from verified startups: UGC TikTok/Reels, graphic design, React frontend, copywriting.
+            </p>
+</div>
+<div class="p-space-md rounded-xl bg-surface-card flex flex-col gap-space-3xs">
+<span class="font-label-caps text-label-caps text-primary uppercase">Guaranteed Escrow Bounty</span>
+<span class="font-label-numeric text-headline-sm text-primary font-bold">₹1,000 – ₹10,000+ <span class="text-body-sm font-normal text-on-surface-variant">/ project</span></span>
+</div>
+</div>
+<div class="pt-space-xl">
+<a class="w-full py-space-sm px-space-md rounded-lg bg-primary-container text-on-primary font-title-md text-title-md flex items-center justify-center gap-space-xs shadow-[0_0_20px_rgba(0,230,118,0.35)] hover:shadow-[0_0_28px_rgba(0,230,118,0.6)] transition-all" href="#">
+<span class="">View 450+ Briefs</span>
+<span class="material-symbols-outlined text-body-md">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Tier 3: Evaluation Challenges -->
+<div class="flex flex-col justify-between bg-surface-card rounded-2xl p-space-xl shadow-lg hover:shadow-[0_0_24px_rgba(0,240,255,0.15)] transition-all transform hover:-translate-y-1">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-space-2xs rounded-full bg-surface-raised font-label-caps text-label-caps text-accent-cyan">
+              CERTIFIED PRO • LEVEL 3
+            </span>
+<span class="material-symbols-outlined text-accent-cyan text-title-md">military_tech</span>
+</div>
+<div class="w-14 h-14 rounded-xl bg-surface-raised flex items-center justify-center text-accent-cyan mt-space-xs">
+<span class="material-symbols-outlined text-headline-lg">workspace_premium</span>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<h3 class="font-headline-md text-headline-md text-on-surface">Evaluation Challenges</h3>
+<p class="font-body-md text-body-md text-on-surface-variant min-h-[66px]">Evaluation projects assess your skills. Once verified, you unlock direct access to high-paying Company Projects and exclusive corporate briefs.</p>
+</div>
+<div class="p-space-md rounded-xl bg-surface-raised/60 flex flex-col gap-space-3xs"><span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Assessment &amp; Outcome</span>
+<span class="font-headline-sm text-headline-sm text-accent-cyan">Verified Skill Badge &amp; Unlocks Company Projects</span></div>
+</div>
+<div class="pt-space-xl">
+<a class="w-full py-space-sm px-space-md rounded-lg bg-surface-raised hover:bg-surface-bright text-on-surface font-title-md text-title-md flex items-center justify-center gap-space-xs transition-colors" href="#">
+<span class="">Take GroSkill Test</span>
+<span class="material-symbols-outlined text-body-md">psychology</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. FEATURED & TRENDING GIGS (4-Column Desktop Grid) -->
+<section class="max-w-7xl mx-auto px-gutter-desktop py-space-2xl w-full">
+<div class="flex items-center justify-between mb-space-xl">
+<div class="flex flex-col gap-space-3xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-widest">REAL-TIME JOB FEED</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+          Trending Missions Right Now
+        </h2>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-space-xs rounded-full bg-surface-raised font-title-md text-title-md text-on-surface hover:bg-surface-bright transition-colors flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-body-md">tune</span>
+<span class="">Filter Categories</span>
+</button>
+</div>
+</div>
+<!-- 4 Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- Card 1 -->
+<div class="flex flex-col justify-between bg-surface-card rounded-2xl p-space-lg shadow-md hover:shadow-[0_0_20px_rgba(0,230,118,0.2)] transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-space-3xs rounded-full bg-surface-raised text-on-surface-variant font-label-caps text-label-caps">Lifelong</span>
+<span class="font-label-numeric text-headline-sm text-primary font-bold">₹800</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold pt-space-xs">
+            Reels &amp; Short Video Creation
+          </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            3 vertical IG reels under 30s showcasing consumer smart appliance unboxing with upbeat audio.
+          </p>
+</div>
+<div class="flex flex-col gap-space-md pt-space-lg">
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant">
+<span class="flex items-center gap-space-3xs text-accent-gold">
+<span class="material-symbols-outlined text-body-sm">group</span>
+              4 spots left
+            </span>
+<span class="font-label-caps text-label-caps text-primary uppercase">Escrow Locked</span>
+</div>
+<a class="w-full py-space-xs rounded-lg bg-surface-raised hover:bg-primary-container hover:text-on-primary text-on-surface font-title-md text-title-md text-center transition-all" href="#">
+            Apply For Gig
+          </a>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="flex flex-col justify-between bg-surface-card rounded-2xl p-space-lg shadow-md hover:shadow-[0_0_20px_rgba(0,230,118,0.2)] transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-space-3xs rounded-full bg-surface-raised text-on-surface-variant font-label-caps text-label-caps">ICICI / mPokket</span>
+<span class="font-label-numeric text-headline-sm text-primary font-bold">₹350</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold pt-space-xs">
+            Fintech App Beta Test
+          </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Bug report &amp; UX walkthrough on Android 14. Document signup flow friction and upload screenshots.
+          </p>
+</div>
+<div class="flex flex-col gap-space-md pt-space-lg">
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant">
+<span class="flex items-center gap-space-3xs text-primary">
+<span class="material-symbols-outlined text-body-sm">bolt</span>
+              Instant Payout
+            </span>
+<span class="font-label-caps text-label-caps text-accent-cyan uppercase">15 Min Review</span>
+</div>
+<a class="w-full py-space-xs rounded-lg bg-surface-raised hover:bg-primary-container hover:text-on-primary text-on-surface font-title-md text-title-md text-center transition-all" href="#">
+            Apply For Gig
+          </a>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="flex flex-col justify-between bg-surface-card rounded-2xl p-space-lg shadow-md hover:shadow-[0_0_20px_rgba(0,230,118,0.2)] transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-space-3xs rounded-full bg-surface-raised text-on-surface-variant font-label-caps text-label-caps">Lxme</span>
+<span class="font-label-numeric text-headline-sm text-primary font-bold">₹1,200</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold pt-space-xs">
+            Brand Voice Social Copy
+          </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            5 carousel post copies on Gen-Z mutual fund investment basics with clear CTA and punchy tone.
+          </p>
+</div>
+<div class="flex flex-col gap-space-md pt-space-lg">
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant">
+<span class="flex items-center gap-space-3xs text-error">
+<span class="material-symbols-outlined text-body-sm">hourglass_top</span>
+              2 spots left
+            </span>
+<span class="font-label-caps text-label-caps text-primary uppercase">GroScore 65+</span>
+</div>
+<a class="w-full py-space-xs rounded-lg bg-surface-raised hover:bg-primary-container hover:text-on-primary text-on-surface font-title-md text-title-md text-center transition-all" href="#">
+            Apply For Gig
+          </a>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="flex flex-col justify-between bg-surface-card rounded-2xl p-space-lg shadow-md hover:shadow-[0_0_20px_rgba(0,230,118,0.2)] transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-space-3xs rounded-full bg-surface-raised text-on-surface-variant font-label-caps text-label-caps">Shadow Ninja</span>
+<span class="font-label-numeric text-headline-sm text-primary font-bold">₹2,500</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold pt-space-xs">
+            Campus Ambassador Lead
+          </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Drive high school gamer community engagement, host mini-tournaments, and share brand discord invites.
+          </p>
+</div>
+<div class="flex flex-col gap-space-md pt-space-lg">
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant">
+<span class="flex items-center gap-space-3xs text-primary">
+<span class="material-symbols-outlined text-body-sm">verified_user</span>
+              Verified Escrow
+            </span>
+<span class="font-label-caps text-label-caps text-accent-gold uppercase">Top Rated</span>
+</div>
+<a class="w-full py-space-xs rounded-lg bg-surface-raised hover:bg-primary-container hover:text-on-primary text-on-surface font-title-md text-title-md text-center transition-all" href="#">
+            Apply For Gig
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. HALL OF FAME: TOP EARNERS DESKTOP SHOWCASE (Horizontal 4-card grid) -->
+<section class="max-w-7xl mx-auto px-gutter-desktop py-space-3xl w-full">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-2xl">
+<div class="flex flex-col gap-space-3xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-accent-gold text-headline-sm">workspace_premium</span>
+<span class="font-label-caps text-label-caps text-accent-gold uppercase tracking-widest">HALL OF FAME</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+          High-Earning Teen Prodigies
+        </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">
+        Meet teenage founders, designers, and growth hackers generating independent five-figure incomes after school.
+      </p>
+</div>
+<!-- 4-Card Showcase Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- Prodigy 1: Sarthak S. -->
+<div class="group relative flex flex-col bg-surface-card rounded-2xl overflow-hidden shadow-xl hover:shadow-[0_0_32px_rgba(0,230,118,0.25)] transition-all transform hover:-translate-y-1">
+<div class="relative aspect-square w-full overflow-hidden bg-surface-raised">
+<img alt="Sarthak S." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="/stitch_funngro_revamp_website/image_from_https_www.funngro.com_assets_sarthak_jen2w_kg.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-abyss via-transparent to-transparent"></div>
+<div class="absolute top-space-sm right-space-sm flex items-center gap-space-3xs px-space-xs py-space-3xs rounded-full bg-surface-abyss/85 backdrop-blur text-accent-gold font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-body-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="">RANK #1</span>
+</div>
+<div class="absolute bottom-space-sm left-space-sm right-space-sm flex items-center justify-between">
+<span class="px-space-xs py-space-3xs rounded bg-primary-container text-on-primary font-label-numeric text-label-numeric font-bold shadow-[0_0_12px_rgba(0,230,118,0.5)]">
+              ₹42,500 Earned
+            </span>
+<span class="font-label-caps text-label-caps text-on-surface bg-surface-abyss/80 px-space-xs py-space-3xs rounded">Age 17</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-2xs bg-surface-card">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Sarthak S.</h4>
+<div class="flex items-center gap-space-3xs text-primary font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-body-sm">bolt</span>
+<span class="">940 XP</span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Web &amp; Graphic Design</span>
+</div>
+</div>
+<!-- Prodigy 2: Sayandeep M. -->
+<div class="group relative flex flex-col bg-surface-card rounded-2xl overflow-hidden shadow-xl hover:shadow-[0_0_32px_rgba(0,230,118,0.25)] transition-all transform hover:-translate-y-1">
+<div class="relative aspect-square w-full overflow-hidden bg-surface-raised">
+<img alt="Sayandeep M." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="/stitch_funngro_revamp_website/image_from_https_www.funngro.com_assets_sayandeep_ccdexwxb.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-abyss via-transparent to-transparent"></div>
+<div class="absolute top-space-sm right-space-sm flex items-center gap-space-3xs px-space-xs py-space-3xs rounded-full bg-surface-abyss/85 backdrop-blur text-primary font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-body-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="">RANK #2</span>
+</div>
+<div class="absolute bottom-space-sm left-space-sm right-space-sm flex items-center justify-between">
+<span class="px-space-xs py-space-3xs rounded bg-primary-container text-on-primary font-label-numeric text-label-numeric font-bold shadow-[0_0_12px_rgba(0,230,118,0.5)]">
+              ₹34,200 Earned
+            </span>
+<span class="font-label-caps text-label-caps text-on-surface bg-surface-abyss/80 px-space-xs py-space-3xs rounded">Age 16</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-2xs bg-surface-card">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Sayandeep M.</h4>
+<div class="flex items-center gap-space-3xs text-primary font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-body-sm">bolt</span>
+<span class="">890 XP</span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Brand Growth &amp; Short Video</span>
+</div>
+</div>
+<!-- Prodigy 3: Ashwani K. -->
+<div class="group relative flex flex-col bg-surface-card rounded-2xl overflow-hidden shadow-xl hover:shadow-[0_0_32px_rgba(0,230,118,0.25)] transition-all transform hover:-translate-y-1">
+<div class="relative aspect-square w-full overflow-hidden bg-surface-raised">
+<img alt="Ashwani K." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="/stitch_funngro_revamp_website/image_from_https_www.funngro.com_assets_ashwani_sirn6cf8.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-abyss via-transparent to-transparent"></div>
+<div class="absolute top-space-sm right-space-sm flex items-center gap-space-3xs px-space-xs py-space-3xs rounded-full bg-surface-abyss/85 backdrop-blur text-accent-cyan font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-body-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="">RANK #3</span>
+</div>
+<div class="absolute bottom-space-sm left-space-sm right-space-sm flex items-center justify-between">
+<span class="px-space-xs py-space-3xs rounded bg-primary-container text-on-primary font-label-numeric text-label-numeric font-bold shadow-[0_0_12px_rgba(0,230,118,0.5)]">
+              ₹28,000 Earned
+            </span>
+<span class="font-label-caps text-label-caps text-on-surface bg-surface-abyss/80 px-space-xs py-space-3xs rounded">Age 18</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-2xs bg-surface-card">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Ashwani K.</h4>
+<div class="flex items-center gap-space-3xs text-primary font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-body-sm">bolt</span>
+<span class="">860 XP</span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">CapCut Video &amp; Motion</span>
+</div>
+</div>
+<!-- Prodigy 4: Anshika P. -->
+<div class="group relative flex flex-col bg-surface-card rounded-2xl overflow-hidden shadow-xl hover:shadow-[0_0_32px_rgba(0,230,118,0.25)] transition-all transform hover:-translate-y-1">
+<div class="relative aspect-square w-full overflow-hidden bg-surface-raised">
+<img alt="Anshika P." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="/stitch_funngro_revamp_website/image_from_https_www.funngro.com_assets_anshika_paapwhhq.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-abyss via-transparent to-transparent"></div>
+<div class="absolute top-space-sm right-space-sm flex items-center gap-space-3xs px-space-xs py-space-3xs rounded-full bg-surface-abyss/85 backdrop-blur text-primary font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-body-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="">RANK #4</span>
+</div>
+<div class="absolute bottom-space-sm left-space-sm right-space-sm flex items-center justify-between">
+<span class="px-space-xs py-space-3xs rounded bg-primary-container text-on-primary font-label-numeric text-label-numeric font-bold shadow-[0_0_12px_rgba(0,230,118,0.5)]">
+              ₹31,400 Earned
+            </span>
+<span class="font-label-caps text-label-caps text-on-surface bg-surface-abyss/80 px-space-xs py-space-3xs rounded">Age 17</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-2xs bg-surface-card">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Anshika P.</h4>
+<div class="flex items-center gap-space-3xs text-primary font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-body-sm">bolt</span>
+<span class="">910 XP</span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Content Research &amp; Copy</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. DESKTOP PRESS & CREDIBILITY BAR -->
+<section class="w-full bg-surface-raised/40 py-space-2xl my-space-xl">
+<div class="max-w-7xl mx-auto px-gutter-desktop flex flex-col items-center gap-space-lg">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest text-center">
+        FEATURED NATIONWIDE ACROSS LEADING MEDIA &amp; FINTECH ECOSYSTEMS
+      </span>
+<div class="w-full grid grid-cols-2 md:grid-cols-4 gap-space-xl items-center justify-items-center opacity-80 hover:opacity-100 transition-opacity">
+<div class="flex items-center gap-space-xs font-headline-sm text-headline-sm font-bold tracking-tighter text-on-surface">
+<span class="material-symbols-outlined text-primary text-headline-md">newspaper</span>
+          THE ECONOMIC TIMES
+        </div>
+<div class="flex items-center gap-space-xs font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface">
+<span class="material-symbols-outlined text-accent-cyan text-headline-md">dynamic_feed</span>
+          YOURSTORY
+        </div>
+<div class="flex items-center gap-space-xs font-headline-sm text-headline-sm font-bold tracking-wider text-on-surface">
+<span class="material-symbols-outlined text-accent-gold text-headline-md">article</span>
+          TIMES OF INDIA
+        </div>
+<div class="flex items-center gap-space-xs font-headline-sm text-headline-sm font-extrabold tracking-tight text-on-surface">
+<span class="material-symbols-outlined text-primary text-headline-md">diamond</span>
+          SHARK TANK INDIA
+        </div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-lowest pt-space-3xl pb-space-2xl shadow-[0_-1px_12px_rgba(0,0,0,0.6)]"><div class="max-w-7xl mx-auto px-gutter-desktop"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-2xl pb-space-2xl"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-xs"><div class="w-8 h-8 rounded-lg bg-surface-raised flex items-center justify-center shadow-[0_0_12px_rgba(0,230,118,0.2)]"><span class="material-symbols-outlined text-primary text-body-lg">bolt</span></div><span class="font-headline-md text-headline-md font-bold text-on-surface">funngro</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">India's #1 Teen Freelancing Platform. Enabling high-conviction teenage prodigies to build, earn, and scale real-world projects with elite tech companies.</p><div class="flex items-center gap-space-sm pt-space-xs"><div class="flex items-center gap-space-xs px-space-sm py-space-2xs rounded-lg bg-surface-raised"><span class="material-symbols-outlined text-accent-cyan text-body-md">verified</span><span class="font-label-caps text-label-caps text-on-surface">AS SEEN ON SHARK TANK INDIA</span></div><div class="flex items-center gap-space-xs px-space-sm py-space-2xs rounded-lg bg-surface-raised"><span class="material-symbols-outlined text-primary text-body-md">lock</span><span class="font-label-caps text-label-caps text-on-surface">ZERO-CUT ESCROW VAULT</span></div></div></div><div class="flex flex-col gap-space-sm"><span class="font-label-caps text-label-caps text-primary tracking-wider uppercase">Missions &amp; Earn</span><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="discover-gigs" href="#">Discover Gigs</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="hall-of-fame" href="#">Hall of Fame</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="how-it-works" href="#">Toffee &amp; Company</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="groscore-analytics" href="#">GroScore System</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-caps text-label-caps text-primary tracking-wider uppercase">For Companies</span><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="for-companies" href="#">Hire Prodigies</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="for-companies" href="#">Enterprise Escrow</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="for-companies" href="#">Project Scopes</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="for-companies" href="#">Compliance &amp; Safety</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-caps text-label-caps text-primary tracking-wider uppercase">Safety &amp; Legal</span><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Guardian Consent</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Direct Escrow Rules</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Privacy Policy</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Terms of Service</a></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md bg-surface-abyss/80 rounded-xl px-space-lg py-space-md"><span class="font-body-sm text-body-sm text-on-surface-variant">© 2025 Funngro Technologies Pvt Ltd. Empowering the Next Gen Workforce.</span><div class="flex items-center gap-space-lg"><span class="flex items-center gap-space-3xs font-body-sm text-body-sm text-primary"><span class="w-2 h-2 rounded-full bg-primary animate-ping"></span> Live Escrow Active</span><span class="font-body-sm text-body-sm text-on-surface-variant">UPI &amp; Bank Verified</span></div></div></div></footer>
+
+
+<script>
+(function() {
+  function injectLogo() {
+    // Match any element that contains ONLY the text "Funngro" (the nav logo)
+    var allEls = document.querySelectorAll('nav a, nav span, nav div, header a, header span, header div, a[href="/"], a[href="#"]');
+    allEls.forEach(function(el) {
+      if (el.childNodes.length === 1 &&
+          el.childNodes[0].nodeType === 3 &&
+          el.childNodes[0].textContent.trim() === 'Funngro') {
+        var img = document.createElement('img');
+        img.src = '/LOGO.JPG';
+        img.alt = 'Funngro';
+        img.style.cssText = 'height:36px;width:auto;object-fit:contain;display:block;';
+        el.replaceChild(img, el.childNodes[0]);
+      }
+    });
+
+    // Also handle cases where Funngro appears as a heading/span inside nav
+    var navHeadings = document.querySelectorAll('nav h1, nav h2, nav h3, nav p, nav span');
+    navHeadings.forEach(function(el) {
+      if (el.textContent.trim() === 'Funngro') {
+        var img = document.createElement('img');
+        img.src = '/LOGO.JPG';
+        img.alt = 'Funngro';
+        img.style.cssText = 'height:36px;width:auto;object-fit:contain;display:block;';
+        el.innerHTML = '';
+        el.appendChild(img);
+      }
+    });
+
+    // Handle footer brand name separately — keep text but prepend logo
+    var footerBrand = document.querySelectorAll('footer h1, footer h2, footer h3, footer p, footer span, footer div');
+    footerBrand.forEach(function(el) {
+      if (el.childNodes.length === 1 &&
+          el.childNodes[0].nodeType === 3 &&
+          el.childNodes[0].textContent.trim() === 'Funngro') {
+        var img = document.createElement('img');
+        img.src = '/LOGO.JPG';
+        img.alt = 'Funngro';
+        img.style.cssText = 'height:28px;width:auto;object-fit:contain;display:block;margin-bottom:4px;';
+        el.insertBefore(img, el.firstChild);
+      }
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectLogo);
+  } else {
+    injectLogo();
+  }
+})();
+</script>
+
+
+<script>
+(function(){
+  var IMGS = {"ankush": "/stitch_funngro_revamp_website/image_from_https_www.funngro.com_assets_ankush_borana_etwvzpar.jpg/screen.png", "anshika": "/stitch_funngro_revamp_website/image_from_https_www.funngro.com_assets_anshika_paapwhhq.jpg/screen.png", "ashwani": "/stitch_funngro_revamp_website/image_from_https_www.funngro.com_assets_ashwani_sirn6cf8.jpg/screen.png", "naitik": "/stitch_funngro_revamp_website/image_from_https_www.funngro.com_assets_naitik_mishra_cg3pxfil.jpg/screen.png", "sarthak": "/stitch_funngro_revamp_website/image_from_https_www.funngro.com_assets_sarthak_jen2w_kg.jpg/screen.png", "sayandeep": "/stitch_funngro_revamp_website/image_from_https_www.funngro.com_assets_sayandeep_ccdexwxb.jpg/screen.png", "sayyam": "/stitch_funngro_revamp_website/image_from_https_www.funngro.com_assets_sayyam_mehta_aeedvr_7.jpg/screen.png", "swarnim": "/stitch_funngro_revamp_website/image_from_https_www.funngro.com_assets_swarnim_prateek_dtj_8wo4.jpg/screen.png", "ujjwal": "/stitch_funngro_revamp_website/image_from_https_www.funngro.com_assets_ujjwal_dubey_cjknhre1.jpg/screen.png", "yashraj": "/stitch_funngro_revamp_website/image_from_https_www.funngro.com_assets_yashraj_singh_b3l6hm7t.jpg/screen.png"};
+  function key(t){ t=(t||'').toLowerCase(); for(var k in IMGS){if(t.indexOf(k)!==-1)return k;} return null; }
+  function ctx(el){ return [el.alt||'',el.src||'',el.parentElement?el.parentElement.textContent:'',el.parentElement&&el.parentElement.parentElement?el.parentElement.parentElement.textContent:''].join(' '); }
+  function fix(){
+    document.querySelectorAll('img').forEach(function(img){
+      if(!img.src||img.src.indexOf('screen.png')!==-1||img.src.indexOf('LOGO')!==-1) return;
+      var k=key(img.getAttribute('src')||'')||key(ctx(img));
+      if(k){ img.src=IMGS[k]; img.style.objectFit='cover'; }
+    });
+  }
+  document.readyState==='loading'?document.addEventListener('DOMContentLoaded',function(){fix();setTimeout(fix,800);}):( fix(),setTimeout(fix,800));
+})();
+</script>
+
+</body></html>
