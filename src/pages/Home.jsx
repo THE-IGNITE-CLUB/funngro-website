@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <main>
       <AutoResizeIframe
-        src={isMobile ? '/mobile-home.html' : '/desktop-home.html'}
+      src={isMobile ? `${import.meta.env.BASE_URL}mobile-home.html` : `${import.meta.env.BASE_URL}desktop-home.html`}
         title="Funngro — Home"
         defaultHeight={isMobile ? MOBILE_HEIGHT : DESKTOP_HEIGHT}
       />

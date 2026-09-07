@@ -1,8 +1,0 @@
-🚀 Initial release: Funngro 2-page React website
-
-Home + Discover pages with desktop & mobile Stitch screens.
-About Us, Founders, Shark Tank badge, Timeline, Testimonials.
-Logo, testimonial images, responsive device detection.
-Python Flask deployment server included.
-
-Co-authored-by: charandevarakonda10 <charandevarakonda10@users.noreply.github.com>

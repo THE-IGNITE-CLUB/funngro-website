@@ -17,7 +17,7 @@ export default function Discover() {
   return (
     <main>
       <AutoResizeIframe
-        src={isMobile ? '/mobile-discover.html' : '/desktop-discover.html'}
+      src={isMobile ? `${import.meta.env.BASE_URL}mobile-discover.html` : `${import.meta.env.BASE_URL}desktop-discover.html`}
         title="Funngro — Discover Projects"
         defaultHeight={isMobile ? MOBILE_HEIGHT : DESKTOP_HEIGHT}
       />
