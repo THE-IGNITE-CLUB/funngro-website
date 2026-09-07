@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>Funngro - India No 1 Teen Freelancing Platform</title>
+<meta content="Earn real money by completing projects from top brands on India's premier teen freelancing platform." name="description"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700&amp;family=Outfit:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "tertiary-container": "#50e0a5",
+            "border-glass": "rgba(0, 230, 118, 0.18)",
+            "on-tertiary-fixed": "#002113",
+            "on-tertiary-fixed-variant": "#005236",
+            "on-primary-fixed-variant": "#005226",
+            "primary-fixed": "#62ff96",
+            "inverse-surface": "#e0e3df",
+            "error-container": "#93000a",
+            "surface-variant": "#313633",
+            "secondary-fixed-dim": "#00dbe9",
+            "surface-raised": "#141C17",
+            "surface-container-lowest": "#0b0f0d",
+            "on-secondary-fixed-variant": "#004f54",
+            "primary": "#75ff9e",
+            "surface-tint": "#00e475",
+            "primary-fixed-dim": "#00e475",
+            "on-primary-container": "#00612e",
+            "on-error": "#690005",
+            "on-secondary-container": "#00686f",
+            "primary-container": "#00e676",
+            "inverse-primary": "#006d35",
+            "background": "#101412",
+            "surface-dim": "#101412",
+            "surface-bright": "#363a38",
+            "surface-abyss": "#080C0A",
+            "on-background": "#e0e3df",
+            "on-secondary": "#00363a",
+            "inverse-on-surface": "#2d312f",
+            "glow-cyan": "rgba(0, 240, 255, 0.35)",
+            "outline": "#859585",
+            "secondary": "#d3fbff",
+            "on-primary-fixed": "#00210b",
+            "surface-container-high": "#272b28",
+            "tertiary-fixed": "#6ffbbe",
+            "on-tertiary": "#003824",
+            "on-error-container": "#ffdad6",
+            "error": "#ffb4ab",
+            "on-primary": "#003918",
+            "accent-cyan": "#00F0FF",
+            "secondary-container": "#00eefc",
+            "outline-variant": "#3b4a3d",
+            "tertiary": "#71fdbf",
+            "surface-container-low": "#181c1a",
+            "surface-container-highest": "#313633",
+            "surface-glass": "rgba(13, 19, 16, 0.72)",
+            "surface-card": "#0D1310",
+            "on-surface-variant": "#bacbb9",
+            "on-tertiary-container": "#006041",
+            "surface-container": "#1c211e",
+            "glow-primary": "rgba(0, 230, 118, 0.35)",
+            "surface": "#101412",
+            "on-surface": "#e0e3df",
+            "on-secondary-fixed": "#002022",
+            "accent-gold": "#FFD043",
+            "secondary-fixed": "#7df4ff",
+            "border-subtle": "rgba(255, 255, 255, 0.08)",
+            "tertiary-fixed-dim": "#4edea3"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-3xs": "0.125rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "margin-desktop": "2.5rem",
+            "margin-mobile": "1.25rem",
+            "gutter-desktop": "1.5rem",
+            "space-sm": "0.75rem",
+            "space-xl": "2rem",
+            "space-2xs": "0.25rem",
+            "space-3xl": "4rem",
+            "gutter-mobile": "1rem",
+            "space-4xl": "6rem",
+            "space-xs": "0.5rem",
+            "space-2xl": "3rem"
+          },
+          "fontFamily": {
+            "headline-lg-mobile": ["Outfit"],
+            "label-numeric": ["Outfit"],
+            "headline-sm": ["Outfit"],
+            "headline-lg": ["Outfit"],
+            "headline-md": ["Outfit"],
+            "body-lg": ["Hanken Grotesk"],
+            "label-caps": ["Hanken Grotesk"],
+            "body-sm": ["Hanken Grotesk"],
+            "title-md": ["Outfit"],
+            "body-md": ["Hanken Grotesk"],
+            "display-hero": ["Outfit"],
+            "display-hero-mobile": ["Outfit"]
+          },
+          "fontSize": {
+            "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+            "label-numeric": ["18px", {"lineHeight": "24px", "letterSpacing": "0.02em", "fontWeight": "700"}],
+            "headline-sm": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+            "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.025em", "fontWeight": "700"}],
+            "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600"}],
+            "body-lg": ["18px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+            "label-caps": ["11px", {"lineHeight": "14px", "letterSpacing": "0.12em", "fontWeight": "700"}],
+            "body-sm": ["13px", {"lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400"}],
+            "title-md": ["16px", {"lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600"}],
+            "body-md": ["15px", {"lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400"}],
+            "display-hero": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800"}],
+            "display-hero-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800"}]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      background-color: #101412;
+      color: #e0e3df;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .glow-shadow {
+      box-shadow: 0 0 20px rgba(0, 230, 118, 0.4);
+    }
+    .glow-hover:hover {
+      box-shadow: 0 0 24px -4px rgba(0, 230, 118, 0.20);
+      border-color: rgba(0, 230, 118, 0.35);
+    }
+    .neon-beam {
+      background: linear-gradient(90deg, #00E676 0%, transparent 100%);
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .text-gradient {
+      background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.6) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    /* Mobile Menu Overlay Transition */
+    #mobile-menu {
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      transform: translateY(-10px);
+      opacity: 0;
+      pointer-events: none;
+    }
+    #mobile-menu.active {
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: auto;
+    }
+  </style>
+</head>
+<body class="bg-background min-h-screen font-body-md selection:bg-primary-container selection:text-surface-abyss" style="background:#101412;min-height:100vh;">
+<!-- TopNavBar (Mobile) -->
+<header class="fixed top-0 w-full z-50 bg-surface-glass backdrop-blur-lg border-b border-border-subtle md:hidden">
+<div class="flex justify-between items-center px-margin-mobile py-4">
+<a href="/" style="display:flex;align-items:center;"><img src="./LOGO.JPG" alt="Funngro" style="height:36px;width:auto;object-fit:contain;display:block;"></a>
+<button class="text-on-surface p-2 focus:outline-none" id="menu-btn">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</div>
+<!-- Hidden Mobile Drawer -->
+<div class="absolute top-full left-0 w-full bg-surface-raised border-b border-border-subtle shadow-2xl flex flex-col items-center py-6 gap-6" id="mobile-menu">
+<a class="font-title-md text-title-md text-primary border-b-2 border-primary pb-1" href="#">Home</a>
+<a class="font-title-md text-title-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">How it Works</a>
+<a class="font-title-md text-title-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">For Companies</a>
+<a class="font-title-md text-title-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Testimonials</a>
+<a class="font-title-md text-title-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Blog</a>
+<div class="flex flex-col gap-4 w-full px-margin-mobile mt-4">
+<button class="w-full py-3 rounded-lg border border-border-glass text-primary bg-[rgba(0,230,118,0.06)] hover:bg-[rgba(0,230,118,0.15)] font-title-md text-title-md transition-colors">Login</button>
+<button class="w-full py-3 rounded-lg bg-primary-container text-surface-abyss font-headline-sm text-headline-sm glow-shadow transition-shadow">Start Earning</button>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="pt-24 pb-space-4xl px-margin-mobile flex flex-col gap-space-3xl md:hidden max-w-[390px] mx-auto overflow-hidden">
+<!-- Hero Section -->
+<section class="flex flex-col items-center text-center gap-space-xl relative mt-space-xl">
+<div class="absolute inset-0 bg-glow-primary blur-[100px] opacity-20 -z-10 rounded-full w-64 h-64 mx-auto"></div>
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[rgba(0,240,255,0.10)] border border-[rgba(0,240,255,0.25)]">
+<span class="w-2 h-2 rounded-full bg-accent-cyan animate-pulse"></span>
+<span class="font-label-caps text-label-caps text-accent-cyan uppercase">System Online</span>
+</div>
+<h1 class="font-display-hero-mobile text-display-hero-mobile text-gradient">
+        India's #1 Platform for Teen Freelancers
+      </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xs">
+        Earn real money by completing projects from top brands. Level up your skills and build your financial future today.
+      </p>
+<button class="w-full py-4 mt-space-md rounded-xl bg-primary-container text-surface-abyss font-headline-sm text-headline-sm flex items-center justify-center gap-2 glow-shadow active:scale-95 transition-all">
+        Start Earning Free
+        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</section>
+<!-- Trust Stats -->
+<section class="grid grid-cols-3 gap-2 bg-surface-glass backdrop-blur-md rounded-xl p-4 border border-border-subtle relative overflow-hidden">
+<div class="neon-beam"></div>
+<div class="flex flex-col items-center text-center">
+<span class="font-label-numeric text-label-numeric text-primary">50k+</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant mt-1">Teens</span>
+</div>
+<div class="flex flex-col items-center text-center border-x border-border-subtle">
+<span class="font-label-numeric text-label-numeric text-primary">₹2Cr+</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant mt-1">Paid Out</span>
+</div>
+<div class="flex flex-col items-center text-center">
+<span class="font-label-numeric text-label-numeric text-primary">500+</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant mt-1">Brands</span>
+</div>
+</section>
+<!-- How It Works (Bento Style) -->
+<section class="flex flex-col gap-space-lg">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-primary text-3xl">route</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Execution Protocol</h2>
+</div>
+<div class="flex flex-col gap-4">
+<!-- Step 1 -->
+<div class="bg-surface-glass backdrop-blur-md rounded-xl p-6 border border-border-subtle relative glow-hover transition-all">
+<div class="absolute top-0 right-0 w-16 h-16 bg-glow-cyan blur-[30px] rounded-full opacity-30"></div>
+<span class="font-label-numeric text-label-numeric text-accent-cyan mb-2 block">01</span>
+<h3 class="font-title-md text-title-md text-on-surface mb-1">Create Profile</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Set up your teen operative identity and list your primary skills.</p>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-glass backdrop-blur-md rounded-xl p-6 border border-border-subtle relative glow-hover transition-all">
+<div class="absolute top-0 right-0 w-16 h-16 bg-glow-primary blur-[30px] rounded-full opacity-30"></div>
+<span class="font-label-numeric text-label-numeric text-primary mb-2 block">02</span>
+<h3 class="font-title-md text-title-md text-on-surface mb-1">Secure Projects</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Browse active bounties from verified companies and deploy your talents.</p>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-glass backdrop-blur-md rounded-xl p-6 border border-border-subtle relative glow-hover transition-all">
+<div class="absolute top-0 right-0 w-16 h-16 bg-accent-gold blur-[30px] rounded-full opacity-20"></div>
+<span class="font-label-numeric text-label-numeric text-accent-gold mb-2 block">03</span>
+<h3 class="font-title-md text-title-md text-on-surface mb-1">Extract Earnings</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Direct UPI payouts with 0% platform cuts upon successful mission completion.</p>
+</div>
+</div>
+</section>
+<!-- Live Projects (Feed) -->
+<section class="flex flex-col gap-space-lg">
+<div class="flex justify-between items-end mb-2 border-b border-border-subtle pb-2">
+<h2 class="font-headline-md text-headline-md text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">radar</span> Active Bounties
+        </h2>
+<a class="font-body-sm text-body-sm text-primary hover:underline" href="#">View All</a>
+</div>
+<div class="flex flex-col gap-4">
+<!-- Project Card 1 -->
+<div class="bg-surface-glass backdrop-blur-md rounded-xl p-5 border border-border-subtle group hover:border-primary transition-colors cursor-pointer relative overflow-hidden">
+<div class="absolute inset-y-0 left-0 w-1 bg-primary transform -translate-x-1 group-hover:translate-x-0 transition-transform"></div>
+<div class="flex justify-between items-start mb-3">
+<div>
+<div class="font-label-caps text-label-caps text-accent-cyan bg-[rgba(0,240,255,0.1)] px-2 py-0.5 rounded-full inline-block mb-2">Content Creation</div>
+<h3 class="font-title-md text-title-md text-on-surface">Social Media Reels</h3>
+</div>
+<div class="font-label-numeric text-label-numeric text-primary">₹2,500</div>
+</div>
+<div class="flex gap-2 mb-4">
+<span class="bg-surface-card px-2 py-1 rounded text-xs text-on-surface-variant border border-border-subtle">Canva</span>
+<span class="bg-surface-card px-2 py-1 rounded text-xs text-on-surface-variant border border-border-subtle">Instagram</span>
+</div>
+<div class="flex items-center text-primary font-title-md text-sm gap-1">
+            View Details <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="bg-surface-glass backdrop-blur-md rounded-xl p-5 border border-border-subtle group hover:border-primary transition-colors cursor-pointer relative overflow-hidden">
+<div class="absolute inset-y-0 left-0 w-1 bg-primary transform -translate-x-1 group-hover:translate-x-0 transition-transform"></div>
+<div class="flex justify-between items-start mb-3">
+<div>
+<div class="font-label-caps text-label-caps text-primary bg-[rgba(0,230,118,0.1)] px-2 py-0.5 rounded-full inline-block mb-2">Design</div>
+<h3 class="font-title-md text-title-md text-on-surface">Startup Logo Design</h3>
+</div>
+<div class="font-label-numeric text-label-numeric text-primary">₹1,500</div>
+</div>
+<div class="flex gap-2 mb-4">
+<span class="bg-surface-card px-2 py-1 rounded text-xs text-on-surface-variant border border-border-subtle">Figma</span>
+<span class="bg-surface-card px-2 py-1 rounded text-xs text-on-surface-variant border border-border-subtle">Illustrator</span>
+</div>
+<div class="flex items-center text-primary font-title-md text-sm gap-1">
+            View Details <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+<!-- Project Card 3 -->
+<div class="bg-surface-glass backdrop-blur-md rounded-xl p-5 border border-border-subtle group hover:border-primary transition-colors cursor-pointer relative overflow-hidden">
+<div class="absolute inset-y-0 left-0 w-1 bg-primary transform -translate-x-1 group-hover:translate-x-0 transition-transform"></div>
+<div class="flex justify-between items-start mb-3">
+<div>
+<div class="font-label-caps text-label-caps text-[#FF63F9] bg-[rgba(255,99,249,0.1)] px-2 py-0.5 rounded-full inline-block mb-2">Video</div>
+<h3 class="font-title-md text-title-md text-on-surface">YouTube Highlights Edit</h3>
+</div>
+<div class="font-label-numeric text-label-numeric text-primary">₹3,000</div>
+</div>
+<div class="flex gap-2 mb-4">
+<span class="bg-surface-card px-2 py-1 rounded text-xs text-on-surface-variant border border-border-subtle">CapCut</span>
+<span class="bg-surface-card px-2 py-1 rounded text-xs text-on-surface-variant border border-border-subtle">Premiere</span>
+</div>
+<div class="flex items-center text-primary font-title-md text-sm gap-1">
+            View Details <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="flex flex-col gap-space-lg">
+<h2 class="font-headline-md text-headline-md text-center text-on-surface mb-2">Top Operatives</h2>
+<!-- Testimonial Carousel/Stack -->
+<div class="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-4 hide-scrollbar -mx-margin-mobile px-margin-mobile">
+<!-- Card 1 -->
+<div class="min-w-[280px] bg-surface-raised rounded-2xl overflow-hidden border border-border-subtle snap-center relative">
+<img class="w-full h-48 object-cover grayscale-[50%] contrast-125 mix-blend-luminosity opacity-80" data-alt="A portrait of a young Indian male teen freelancer in a dimly lit, neon-accented cyberpunk styled room. He looks confident, bathed in subtle green edge lighting, representing a top operative on a digital platform." src="https://lh3.googleusercontent.com/aida/AEtjO1XrlpaQXsaCOvJdGWbs1niKDWNVF5NfF5j6UzsmK2ljQYl3c5s6uUdPAZ_KD_J9nbGuJDkFWVYWu-ojW37nXNNC5UR2CQ4LhZPzri4CDp7pxRV-zEgNzCn9HUIBuKGGycldqnO888oJFrl1xJgub3FVVLvjEK9royFz3LN9yJVxTaHQX7E3aaqhtZJZJ_L3Qs5SSOkvLEX4z-HhhUDPeW58d41PEBA36YKgH9enr5NmRqusgzTShV-p"/>
+<div class="absolute top-4 left-4 bg-[rgba(13,19,16,0.85)] backdrop-blur-md px-3 py-1 rounded-full border border-primary text-primary font-label-caps flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span> Level 5
+           </div>
+<div class="p-5 bg-gradient-to-t from-surface-card to-transparent -mt-12 relative z-10">
+<h3 class="font-title-md text-title-md text-on-surface">Sayandeep</h3>
+<div class="text-accent-cyan font-label-numeric mt-1">Earned: ₹45,000</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 italic">"Funngro gave me the platform to monetize my video editing skills before I even hit college."</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="min-w-[280px] bg-surface-raised rounded-2xl overflow-hidden border border-border-subtle snap-center relative">
+<img class="w-full h-48 object-cover grayscale-[50%] contrast-125 mix-blend-luminosity opacity-80" data-alt="A striking portrait of a teenage Indian male coder or designer. The lighting is cinematic, deep blacks with cyan highlights, conveying a serious, professional cyberpunk aesthetic for a high-earning youth." src="https://lh3.googleusercontent.com/aida/AEtjO1UiFkq9FnsiwnUJPhEMSPSZF6Lhy9CAmWgD8MAZzcxD4GVO7RqnisOExyIh05xGb1tokrnzIztqkbZmCpQdpyG60RLJpY_-EZ5hjSaFvSPRu66eMXQgqs2iJhYlFQmohumDY-gmxV5VAKf15dlZM4ZIfOKhcdr_v8W5ONyflRl6Amj8Gkk1cVj2FzgDOv5z5zHGzcbb4JAZ4ND-gO3czXX89hwYwSHv4k4LHNkuKvkGxpLeSxLfMqI"/>
+<div class="absolute top-4 left-4 bg-[rgba(13,19,16,0.85)] backdrop-blur-md px-3 py-1 rounded-full border border-primary text-primary font-label-caps flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span> Level 4
+           </div>
+<div class="p-5 bg-gradient-to-t from-surface-card to-transparent -mt-12 relative z-10">
+<h3 class="font-title-md text-title-md text-on-surface">Ashwani</h3>
+<div class="text-accent-cyan font-label-numeric mt-1">Earned: ₹32,000</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 italic">"Landed UI/UX gigs that paid real money. The UPI withdrawal is instant and flawless."</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="min-w-[280px] bg-surface-raised rounded-2xl overflow-hidden border border-border-subtle snap-center relative">
+<img class="w-full h-48 object-cover grayscale-[50%] contrast-125 mix-blend-luminosity opacity-80" data-alt="A cinematic portrait of a young Indian male developer looking directly at the camera. Lit with soft neon green rim lights against an abyssal black background, depicting a successful teen freelancer." src="https://lh3.googleusercontent.com/aida/AEtjO1Veko_L5Gmlfw2bhrj2MoU1Z04T-FYkj3HRAfhz2ti2tD4ucZonU_xX63h-nFoYcP6vH3qQ6WU0kvb7-BGl_WHpPChhnBDk-v1gl04rdDBe9VfTD1K1h1724RDgC9bdjs-vvL3IBkCA-3MUA-27uAIGGBTaKDS4bQAsWH-oK3UfATKqHuUcrLAHtYjeCFsvs9sLmU-Q8LMs79tP9haf3uKS4xv3Ug7OePapewPzat4PC6lyUeArjHmB"/>
+<div class="absolute top-4 left-4 bg-[rgba(13,19,16,0.85)] backdrop-blur-md px-3 py-1 rounded-full border border-primary text-primary font-label-caps flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span> Level 6
+           </div>
+<div class="p-5 bg-gradient-to-t from-surface-card to-transparent -mt-12 relative z-10">
+<h3 class="font-title-md text-title-md text-on-surface">Sarthak</h3>
+<div class="text-accent-cyan font-label-numeric mt-1">Earned: ₹60,000+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 italic">"The absolute best way for students to build a real-world portfolio and get paid for it."</p>
+</div>
+</div>
+</div>
+<style>
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      </style>
+</section>
+<!-- CTA / Upgrade Section -->
+<section class="bg-[rgba(13,19,16,0.9)] rounded-2xl p-6 border border-border-glass relative overflow-hidden text-center mt-space-xl">
+<div class="neon-beam"></div>
+<div class="absolute -top-10 -right-10 w-32 h-32 bg-glow-primary blur-[40px] rounded-full opacity-40"></div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2">Ready to Upgrade?</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">Initialize your operative account and access top-tier bounties.</p>
+<div class="flex flex-col gap-3">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant">mail</span>
+<input class="w-full bg-surface-abyss border border-[rgba(255,255,255,0.12)] rounded-lg h-12 pl-10 pr-4 text-on-surface placeholder-[rgba(255,255,255,0.3)] focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" placeholder="Enter operative email" type="email"/>
+</div>
+<button class="w-full h-12 bg-primary-container text-surface-abyss font-headline-sm text-headline-sm rounded-lg glow-shadow flex items-center justify-center gap-2 active:scale-95 transition-transform">
+<span class="material-symbols-outlined">power_settings_new</span> Initialize
+        </button>
+</div>
+</section>
+</main>
+<!-- Footer (Mobile implementation of JSON spec) -->
+<footer class="w-full py-space-3xl bg-surface-abyss border-t border-border-subtle md:hidden px-margin-mobile flex flex-col gap-space-xl">
+<div class="flex flex-col items-center text-center gap-4">
+<span class="font-headline-sm text-headline-sm font-bold text-primary flex items-center gap-2">
+<img src="./LOGO.JPG" alt="Funngro" style="height:36px;width:auto;object-fit:contain;display:block;">
+      </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-[250px]">
+        Empowering the next generation of builders.
+      </p>
+</div>
+<div class="grid grid-cols-2 gap-4 text-center">
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-all" href="#">Privacy Policy</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-all" href="#">Terms of Service</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-all" href="#">FAQ</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-all" href="#">Contact Us</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-all col-span-2" href="#">Careers</a>
+</div>
+<div class="text-center font-body-sm text-body-sm text-on-surface-variant border-t border-border-subtle pt-6 mt-2">
+      © 2024 Funngro. All rights reserved.
+    </div>
+</footer>
+<script>
+    // Simple logic for the mobile drawer menu
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = menuBtn.querySelector('.material-symbols-outlined');
+    
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('active');
+      if(mobileMenu.classList.contains('active')){
+        menuIcon.textContent = 'close';
+      } else {
+        menuIcon.textContent = 'menu';
+      }
+    });
+  </script>
+
+<script>
+(function() {
+  function injectLogo() {
+    // Match any element that contains ONLY the text "Funngro" (the nav logo)
+    var allEls = document.querySelectorAll('nav a, nav span, nav div, header a, header span, header div, a[href="/"], a[href="#"]');
+    allEls.forEach(function(el) {
+      if (el.childNodes.length === 1 &&
+          el.childNodes[0].nodeType === 3 &&
+          el.childNodes[0].textContent.trim() === 'Funngro') {
+        var img = document.createElement('img');
+        img.src = '/LOGO.JPG';
+        img.alt = 'Funngro';
+        img.style.cssText = 'height:36px;width:auto;object-fit:contain;display:block;';
+        el.replaceChild(img, el.childNodes[0]);
+      }
+    });
+
+    // Also handle cases where Funngro appears as a heading/span inside nav
+    var navHeadings = document.querySelectorAll('nav h1, nav h2, nav h3, nav p, nav span');
+    navHeadings.forEach(function(el) {
+      if (el.textContent.trim() === 'Funngro') {
+        var img = document.createElement('img');
+        img.src = '/LOGO.JPG';
+        img.alt = 'Funngro';
+        img.style.cssText = 'height:36px;width:auto;object-fit:contain;display:block;';
+        el.innerHTML = '';
+        el.appendChild(img);
+      }
+    });
+
+    // Handle footer brand name separately — keep text but prepend logo
+    var footerBrand = document.querySelectorAll('footer h1, footer h2, footer h3, footer p, footer span, footer div');
+    footerBrand.forEach(function(el) {
+      if (el.childNodes.length === 1 &&
+          el.childNodes[0].nodeType === 3 &&
+          el.childNodes[0].textContent.trim() === 'Funngro') {
+        var img = document.createElement('img');
+        img.src = '/LOGO.JPG';
+        img.alt = 'Funngro';
+        img.style.cssText = 'height:28px;width:auto;object-fit:contain;display:block;margin-bottom:4px;';
+        el.insertBefore(img, el.firstChild);
+      }
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectLogo);
+  } else {
+    injectLogo();
+  }
+})();
+</script>
+
+
+<script>
+(function() {
+  var IMAGES = {
+    'ankush':    './stitch_funngro_revamp_website/image_from_https_www.funngro.com_assets_ankush_borana_etwvzpar.jpg',
+    'anshika':   './stitch_funngro_revamp_website/image_from_https_www.funngro.com_assets_anshika_paapwhhq.jpg',
+    'ashwani':   './stitch_funngro_revamp_website/image_from_https_www.funngro.com_assets_ashwani_sirn6cf8.jpg',
+    'naitik':    './stitch_funngro_revamp_website/image_from_https_www.funngro.com_assets_naitik_mishra_cg3pxfil.jpg',
+    'sarthak':   './stitch_funngro_revamp_website/image_from_https_www.funngro.com_assets_sarthak_jen2w_kg.jpg',
+    'sayandeep': './stitch_funngro_revamp_website/image_from_https_www.funngro.com_assets_sayandeep_ccdexwxb.jpg',
+    'sayyam':    './stitch_funngro_revamp_website/image_from_https_www.funngro.com_assets_sayyam_mehta_aeedvr_7.jpg',
+    'swarnim':   './stitch_funngro_revamp_website/image_from_https_www.funngro.com_assets_swarnim_prateek_dtj_8wo4.jpg',
+    'ujjwal':    './stitch_funngro_revamp_website/image_from_https_www.funngro.com_assets_ujjwal_dubey_cjknhre1.jpg',
+    'yashraj':   './stitch_funngro_revamp_website/image_from_https_www.funngro.com_assets_yashraj_singh_b3l6hm7t.jpg'
+  };
+
+  function findKeyword(text) {
+    text = (text || '').toLowerCase();
+    for (var key in IMAGES) {
+      if (text.indexOf(key) !== -1) return key;
+    }
+    return null;
+  }
+
+  function getContextText(el) {
+    // Look at: alt, src, aria-label, closest parent text
+    var ctx = [
+      el.alt || '',
+      el.src || '',
+      el.getAttribute('aria-label') || '',
+      el.closest('[data-name]') ? el.closest('[data-name]').dataset.name : '',
+      el.parentElement ? el.parentElement.textContent : '',
+      el.parentElement && el.parentElement.parentElement
+        ? el.parentElement.parentElement.textContent : ''
+    ].join(' ');
+    return ctx;
+  }
+
+  function fixImages() {
+    var imgs = document.querySelectorAll('img');
+    imgs.forEach(function(img) {
+      // 1. Already has a proper real src — skip
+      if (img.src && img.src.indexOf('funngro.com') !== -1) return;
+      if (img.src && img.src.indexOf('stitch_funngro') !== -1) return;
+      if (img.src && img.src.indexOf('LOGO') !== -1) return;
+      if (img.src && img.src.indexOf('lh3.googleusercontent') !== -1) return;
+
+      // 2. Check placeholder pattern in src
+      var srcVal = img.getAttribute('src') || '';
+      var key = findKeyword(srcVal) || findKeyword(getContextText(img));
+
+      if (key) {
+        img.src = IMAGES[key];
+        img.style.objectFit = 'cover';
+      }
+    });
+
+    // 3. Fix background-image inline styles referencing placeholder IDs
+    var allEls = document.querySelectorAll('[style*="background-image"]');
+    allEls.forEach(function(el) {
+      var style = el.getAttribute('style') || '';
+      if (style.indexOf('DATA:IMAGE') !== -1 || style.indexOf('placeholder') !== -1) {
+        var key = findKeyword(style) || findKeyword(el.textContent);
+        if (key) {
+          el.style.backgroundImage = 'url(' + IMAGES[key] + ')';
+          el.style.backgroundSize = 'cover';
+          el.style.backgroundPosition = 'center';
+        }
+      }
+    });
+  }
+
+  // Run on load and after a short delay (for dynamic rendering)
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+      fixImages();
+      setTimeout(fixImages, 800);
+    });
+  } else {
+    fixImages();
+    setTimeout(fixImages, 800);
+  }
+})();
+</script>
+
+
+<script>
+(function(){
+  var IMGS = {"ankush": "./stitch_funngro_revamp_website/image_from_https_www.funngro.com_assets_ankush_borana_etwvzpar.jpg/screen.png", "anshika": "./stitch_funngro_revamp_website/image_from_https_www.funngro.com_assets_anshika_paapwhhq.jpg/screen.png", "ashwani": "./stitch_funngro_revamp_website/image_from_https_www.funngro.com_assets_ashwani_sirn6cf8.jpg/screen.png", "naitik": "./stitch_funngro_revamp_website/image_from_https_www.funngro.com_assets_naitik_mishra_cg3pxfil.jpg/screen.png", "sarthak": "./stitch_funngro_revamp_website/image_from_https_www.funngro.com_assets_sarthak_jen2w_kg.jpg/screen.png", "sayandeep": "./stitch_funngro_revamp_website/image_from_https_www.funngro.com_assets_sayandeep_ccdexwxb.jpg/screen.png", "sayyam": "./stitch_funngro_revamp_website/image_from_https_www.funngro.com_assets_sayyam_mehta_aeedvr_7.jpg/screen.png", "swarnim": "./stitch_funngro_revamp_website/image_from_https_www.funngro.com_assets_swarnim_prateek_dtj_8wo4.jpg/screen.png", "ujjwal": "./stitch_funngro_revamp_website/image_from_https_www.funngro.com_assets_ujjwal_dubey_cjknhre1.jpg/screen.png", "yashraj": "./stitch_funngro_revamp_website/image_from_https_www.funngro.com_assets_yashraj_singh_b3l6hm7t.jpg/screen.png"};
+  function key(t){ t=(t||'').toLowerCase(); for(var k in IMGS){if(t.indexOf(k)!==-1)return k;} return null; }
+  function ctx(el){ return [el.alt||'',el.src||'',el.parentElement?el.parentElement.textContent:'',el.parentElement&&el.parentElement.parentElement?el.parentElement.parentElement.textContent:''].join(' '); }
+  function fix(){
+    document.querySelectorAll('img').forEach(function(img){
+      if(!img.src||img.src.indexOf('screen.png')!==-1||img.src.indexOf('LOGO')!==-1) return;
+      var k=key(img.getAttribute('src')||'')||key(ctx(img));
+      if(k){ img.src=IMGS[k]; img.style.objectFit='cover'; }
+    });
+  }
+  document.readyState==='loading'?document.addEventListener('DOMContentLoaded',function(){fix();setTimeout(fix,800);}):( fix(),setTimeout(fix,800));
+})();
+</script>
+
+</body></html>
