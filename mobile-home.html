@@ -167,6 +167,17 @@
       opacity: 1;
       pointer-events: auto;
     }
+
+    /* Scroll-reveal */
+    .step-reveal {
+      opacity: 0;
+      transform: translateY(44px);
+      transition: opacity 0.65s cubic-bezier(0.22,1,0.36,1), transform 0.65s cubic-bezier(0.22,1,0.36,1);
+    }
+    .step-reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
   </style>
 </head>
 <body class="bg-background min-h-screen font-body-md selection:bg-primary-container selection:text-surface-abyss" style="background:#101412;min-height:100vh;">
@@ -234,23 +245,23 @@
 <span class="material-symbols-outlined text-primary text-3xl">route</span>
 <h2 class="font-headline-md text-headline-md text-on-surface">Execution Protocol</h2>
 </div>
-<div class="flex flex-col gap-4">
+<div id="mobile-how-it-works" class="flex flex-col gap-4">
 <!-- Step 1 -->
-<div class="bg-surface-glass backdrop-blur-md rounded-xl p-6 border border-border-subtle relative glow-hover transition-all">
+<div class="bg-surface-glass backdrop-blur-md rounded-xl p-6 border border-border-subtle relative glow-hover transition-all step-reveal">
 <div class="absolute top-0 right-0 w-16 h-16 bg-glow-cyan blur-[30px] rounded-full opacity-30"></div>
 <span class="font-label-numeric text-label-numeric text-accent-cyan mb-2 block">01</span>
 <h3 class="font-title-md text-title-md text-on-surface mb-1">Create Profile</h3>
 <p class="font-body-sm text-body-sm text-on-surface-variant">Set up your teen operative identity and list your primary skills.</p>
 </div>
 <!-- Step 2 -->
-<div class="bg-surface-glass backdrop-blur-md rounded-xl p-6 border border-border-subtle relative glow-hover transition-all">
+<div class="bg-surface-glass backdrop-blur-md rounded-xl p-6 border border-border-subtle relative glow-hover transition-all step-reveal">
 <div class="absolute top-0 right-0 w-16 h-16 bg-glow-primary blur-[30px] rounded-full opacity-30"></div>
 <span class="font-label-numeric text-label-numeric text-primary mb-2 block">02</span>
 <h3 class="font-title-md text-title-md text-on-surface mb-1">Secure Projects</h3>
 <p class="font-body-sm text-body-sm text-on-surface-variant">Browse active bounties from verified companies and deploy your talents.</p>
 </div>
 <!-- Step 3 -->
-<div class="bg-surface-glass backdrop-blur-md rounded-xl p-6 border border-border-subtle relative glow-hover transition-all">
+<div class="bg-surface-glass backdrop-blur-md rounded-xl p-6 border border-border-subtle relative glow-hover transition-all step-reveal">
 <div class="absolute top-0 right-0 w-16 h-16 bg-accent-gold blur-[30px] rounded-full opacity-20"></div>
 <span class="font-label-numeric text-label-numeric text-accent-gold mb-2 block">03</span>
 <h3 class="font-title-md text-title-md text-on-surface mb-1">Extract Earnings</h3>
@@ -258,6 +269,24 @@
 </div>
 </div>
 </section>
+
+<script>
+(function(){
+  var steps = document.querySelectorAll('#mobile-how-it-works .step-reveal');
+  if(!steps.length) return;
+  var observer = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){
+        var el = entry.target;
+        var idx = Array.prototype.indexOf.call(steps, el);
+        setTimeout(function(){ el.classList.add('visible'); }, idx * 220);
+        observer.unobserve(el);
+      }
+    });
+  }, { threshold: 0.15 });
+  steps.forEach(function(el){ observer.observe(el); });
+})();
+</script>
 <!-- Live Projects (Feed) -->
 <section class="flex flex-col gap-space-lg">
 <div class="flex justify-between items-end mb-2 border-b border-border-subtle pb-2">

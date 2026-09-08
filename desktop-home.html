@@ -194,6 +194,17 @@
       .glass-card:hover .laser-edge::before {
         opacity: 1;
       }
+
+      /* Scroll-reveal animation */
+      .step-reveal {
+        opacity: 0;
+        transform: translateY(48px);
+        transition: opacity 0.65s cubic-bezier(0.22,1,0.36,1), transform 0.65s cubic-bezier(0.22,1,0.36,1);
+      }
+      .step-reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
     </style>
 </head>
 <body class="bg-surface-abyss text-on-surface font-body-lg min-h-screen relative overflow-x-hidden">
@@ -280,9 +291,9 @@
 <h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-space-xs">The Operating System</h2>
 <p class="font-body-md text-body-md text-on-surface-variant">Three steps to initialize your earning protocol.</p>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-desktop">
+<div id="how-it-works-steps" class="grid grid-cols-1 md:grid-cols-3 gap-gutter-desktop">
 <!-- Step 1 -->
-<div class="glass-card p-space-xl rounded-xl relative overflow-hidden group">
+<div class="glass-card p-space-xl rounded-xl relative overflow-hidden group step-reveal">
 <div class="absolute top-0 right-0 w-32 h-32 bg-primary-container opacity-[0.02] rounded-full blur-[30px] group-hover:opacity-[0.1] transition-opacity"></div>
 <div class="w-14 h-14 rounded-lg bg-surface-raised border border-border-subtle flex items-center justify-center mb-space-lg text-primary-container text-[28px] shadow-[0_0_15px_rgba(0,230,118,0.1)]">
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">person_add</span>
@@ -292,7 +303,7 @@
 <p class="font-body-sm text-body-sm text-on-surface-variant">Register your skills and set up your operative identity. No experience required to start.</p>
 </div>
 <!-- Step 2 -->
-<div class="glass-card p-space-xl rounded-xl relative overflow-hidden group">
+<div class="glass-card p-space-xl rounded-xl relative overflow-hidden group step-reveal">
 <div class="absolute top-0 right-0 w-32 h-32 bg-accent-cyan opacity-[0.02] rounded-full blur-[30px] group-hover:opacity-[0.1] transition-opacity"></div>
 <div class="w-14 h-14 rounded-lg bg-surface-raised border border-border-subtle flex items-center justify-center mb-space-lg text-accent-cyan text-[28px] shadow-[0_0_15px_rgba(0,240,255,0.1)]">
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">task</span>
@@ -302,7 +313,7 @@
 <p class="font-body-sm text-body-sm text-on-surface-variant">Browse the terminal for active bounties from verified companies. Apply and execute.</p>
 </div>
 <!-- Step 3 -->
-<div class="glass-card p-space-xl rounded-xl relative overflow-hidden group">
+<div class="glass-card p-space-xl rounded-xl relative overflow-hidden group step-reveal">
 <div class="absolute top-0 right-0 w-32 h-32 bg-accent-gold opacity-[0.02] rounded-full blur-[30px] group-hover:opacity-[0.1] transition-opacity"></div>
 <div class="w-14 h-14 rounded-lg bg-surface-raised border border-border-subtle flex items-center justify-center mb-space-lg text-accent-gold text-[28px] shadow-[0_0_15px_rgba(255,208,67,0.1)]">
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">account_balance_wallet</span>
@@ -313,6 +324,24 @@
 </div>
 </div>
 </section>
+
+<script>
+(function(){
+  var steps = document.querySelectorAll('#how-it-works-steps .step-reveal');
+  if(!steps.length) return;
+  var observer = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){
+        var el = entry.target;
+        var idx = Array.prototype.indexOf.call(steps, el);
+        setTimeout(function(){ el.classList.add('visible'); }, idx * 220);
+        observer.unobserve(el);
+      }
+    });
+  }, { threshold: 0.15 });
+  steps.forEach(function(el){ observer.observe(el); });
+})();
+</script>
 <!-- Live Projects -->
 <section class="py-space-3xl border-t border-border-subtle">
 <div class="flex flex-col md:flex-row justify-between items-end mb-space-2xl gap-space-md">
