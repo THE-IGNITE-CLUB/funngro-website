@@ -269,24 +269,6 @@
 </div>
 </div>
 </section>
-
-<script>
-(function(){
-  var steps = document.querySelectorAll('#mobile-how-it-works .step-reveal');
-  if(!steps.length) return;
-  var observer = new IntersectionObserver(function(entries){
-    entries.forEach(function(entry){
-      if(entry.isIntersecting){
-        var el = entry.target;
-        var idx = Array.prototype.indexOf.call(steps, el);
-        setTimeout(function(){ el.classList.add('visible'); }, idx * 220);
-        observer.unobserve(el);
-      }
-    });
-  }, { threshold: 0.15 });
-  steps.forEach(function(el){ observer.observe(el); });
-})();
-</script>
 <!-- Live Projects (Feed) -->
 <section class="flex flex-col gap-space-lg">
 <div class="flex justify-between items-end mb-2 border-b border-border-subtle pb-2">
@@ -577,6 +559,25 @@
   }
   document.readyState==='loading'?document.addEventListener('DOMContentLoaded',function(){fix();setTimeout(fix,800);}):( fix(),setTimeout(fix,800));
 })();
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var steps = document.querySelectorAll('.step-reveal');
+  if (!steps.length) return;
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        var el = entry.target;
+        var allSteps = Array.prototype.slice.call(document.querySelectorAll('.step-reveal'));
+        var idx = allSteps.indexOf(el);
+        setTimeout(function() { el.classList.add('visible'); }, idx * 220);
+        observer.unobserve(el);
+      }
+    });
+  }, { threshold: 0.05, rootMargin: '0px 0px -50px 0px' });
+  steps.forEach(function(el) { observer.observe(el); });
+});
 </script>
 
 </body></html>
