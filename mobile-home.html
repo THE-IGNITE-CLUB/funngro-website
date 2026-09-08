@@ -167,17 +167,6 @@
       opacity: 1;
       pointer-events: auto;
     }
-
-    /* Scroll-reveal */
-    .step-reveal {
-      opacity: 0;
-      transform: translateY(44px);
-      transition: opacity 0.65s cubic-bezier(0.22,1,0.36,1), transform 0.65s cubic-bezier(0.22,1,0.36,1);
-    }
-    .step-reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
   </style>
 </head>
 <body class="bg-background min-h-screen font-body-md selection:bg-primary-container selection:text-surface-abyss" style="background:#101412;min-height:100vh;">
@@ -562,22 +551,35 @@
 </script>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  var steps = document.querySelectorAll('.step-reveal');
-  if (!steps.length) return;
-  var observer = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-      if (entry.isIntersecting) {
-        var el = entry.target;
-        var allSteps = Array.prototype.slice.call(document.querySelectorAll('.step-reveal'));
-        var idx = allSteps.indexOf(el);
-        setTimeout(function() { el.classList.add('visible'); }, idx * 220);
-        observer.unobserve(el);
-      }
+(function() {
+  function initReveal() {
+    var steps = document.querySelectorAll('.step-reveal');
+    if (!steps.length) return;
+    steps.forEach(function(el) {
+      el.style.cssText += ';opacity:0!important;transform:translateY(50px)!important;transition:opacity 0.7s ease, transform 0.7s ease!important;';
     });
-  }, { threshold: 0.05, rootMargin: '0px 0px -50px 0px' });
-  steps.forEach(function(el) { observer.observe(el); });
-});
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          var el = entry.target;
+          var all = Array.prototype.slice.call(document.querySelectorAll('.step-reveal'));
+          var idx = all.indexOf(el);
+          setTimeout(function() {
+            el.style.opacity = '1';
+            el.style.transform = 'translateY(0)';
+          }, idx * 200);
+          observer.unobserve(el);
+        }
+      });
+    }, { threshold: 0.01 });
+    steps.forEach(function(el) { observer.observe(el); });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initReveal);
+  } else {
+    initReveal();
+  }
+})();
 </script>
 
 </body></html>
